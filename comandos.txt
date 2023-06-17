@@ -44,10 +44,13 @@ conda list <nombre_paquete>
 # directorio donde está el Dockerfile
 cd API
 # crear el contenedor Docker
-docker build . -t chuscas88/insurance:1.0
+docker build . -t chuscas88/insurance:0.0.5
 
 # moverse a la carpeta donde está el docker-compose
 cd compose
 # lanzar docker-compose
 docker-compose up
+
+# descargar imagen Docker
+docker pull chuscas88/insurance:0.0.5
 
