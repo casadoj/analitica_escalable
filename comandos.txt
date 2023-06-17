@@ -11,8 +11,9 @@ tox -r
 
 # Actualizar el comando "build"
 py -m pip install --upgrade build
+# directorio donde se ubique el archivo setup.py
+cd <directorio>  
 # construir el modelo
-cd <directorio>  # directorio donde se ubique el archivo setup.py
 py -m build
 
 # INSTALAR EL PAQUETE
