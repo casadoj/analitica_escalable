@@ -28,13 +28,22 @@ El análisis exploratorio de los datos y el desarrollo del `Pipeline` lo he hech
 
 ## Librería PyPI
 
-Todo el proceso antes explicado ha sido empaquetado en forma de librería Python llamada [insurance](https://pypi.org/project/insurance/0.0.5/) disponible en PyPI. El comando para instalar la librería con `pip` es el siguiente:
+Todo el proceso antes explicado ha sido empaquetado en forma de librería Python llamada [insurance](https://pypi.org/project/insurance/0.0.5/) disponible en PyPI. Todos los archivos necesarios para empaquetar el algoritmo están en el directorio [Library](https://github.com/casadoj/analitica_escalable/blob/main/library/).
+
+El comando para instalar la librería con `pip` es el siguiente:
 
 ```pip install insurance==0.0.5```
 
 ## Importar imagen Docker
 
-El comando para importar la imagen Docker con la API web es el siguiente:
+He creado una imagen Docker con la API web. Todos los archivos necesarios para crear esta imagen están en el directorio [API](https://github.com/casadoj/analitica_escalable/blob/main/API/) del respositorio. Son los siguientes:
+
+* _Dockerfile_: contiene las instrucciones necesarias para construir la imagen. Se crea un entorno Python, se copian los archivos necesarios al directorio `./app`, se establece este directorio como el de trabajo, se instalan las librerías especificadas en _requirements.txt_, se expone el puerto 5000 y se ejecuta el modelo (archivo _app.py_).
+* _requiremensts.txt_: especifica las librerías Python requeridas para poder ejecutar el modelo. Entre ellas está la librería que se creó en la sección anterior: `insurance==0.0.5`.
+* _app.py_: es el modelo a ejecutar. Se utiliza la librería `Flask` para recibir la información introducida por el usuario de la web. Estos datos se meten en un _DataFrame_ de Pandas, que a su vez es el dato de entrada para hacer la predición (función `make_prediction`). Esta función proviene de la librería `insurance` creada en el apartado anterior.
+* _template/website.html_: es la plantilla que define el aspecto de la API web.
+
+El siguiente comando permite importar la imagen con la API web desde DockerHub:
 
 ```docker pull chuscas88/insurance:0.0.5```
 
