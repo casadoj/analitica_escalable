@@ -1,7 +1,7 @@
-# Analítica escalable
+# PEC2: Analítica escalable
 
-***Autor**: Jesús Casado Rodríguez*
-***Fecha**: 17-06-2023*
+***Autor**: Jesús Casado Rodríguez*<br>
+***Fecha**: 17-06-2023*<br>
 
 PEC 2 de la asignatura "Analítica escalable" del Máster en Ciencia de Datos de la Universidad de Alcalá de Henares.
 
