@@ -20,7 +20,7 @@ my_model/datasets/train.csv
 my_model/processing/__init__.py
 my_model/processing/data_manager.py
 my_model/processing/validation.py
-my_model/trained_models/pl_insurance_0.0.1.pkl
+my_model/trained_models/pl_insurance_0.0.4.pkl
 requirements/requirements.txt
 requirements/test_requirements.txt
 tests/test_prediction.py

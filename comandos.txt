@@ -27,6 +27,7 @@ conda list <nombre_paquete>
 
 # SUBIR PAQUETE A PYPI
 # --------------------
+
 # directorio donde se ubique el subdirectorio "dist"
 cd <directorio>
 # subir el modelo
@@ -35,4 +36,17 @@ twine upload dist/*
 pip install <nombre_paquete>
 # comprobar la instalación
 conda list <nombre_paquete>
+
+# API web
+# -------
+
+# directorio donde está el Dockerfile
+cd API
+# crear el contenedor Docker
+docker build . -t chuscas88/insurance:1.0
+
+# moverse a la carpeta donde está el docker-compose
+cd compose
+# lanzar docker-compose
+docker-compose up
 

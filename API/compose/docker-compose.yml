@@ -1,0 +1,6 @@
+version: '3'
+services:
+  flask-ml:
+    image: 'chuscas88/insurance:0.0.4'
+    ports:
+      - '5000:5000'

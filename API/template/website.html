@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Predict the cost of your health insurance</title>
+    </head>
+    
+    <body>
+        <form name="form", method="POST", style="text-align: center;" action="/">
+            <br>
+            Age: <input type="number" name="height", placeholder="Enter your age" required/>
+            <br><br>
+            Sexo (male/female): <input type="text" name="sex", placeholder="Enter your gender" required/>
+            <br><br>
+            BMI: <input type="number" name="bmi", placeholder="Enter your body mass index" required/>
+            <br><br>
+            Smoker (yes/no): <input type="text" name="smoker", placeholder="Do you smoke?" required/>
+            <br><br>
+            <br><br>
+            Region: <input type="text" name="region", placeholder="Enter your region: northeast, southeast, southwest, northwest" required/>
+            <br><br>
+            <br><br>
+            Children: <input type="number" name="children", placeholder="Enter the number of children you have" required/>
+            <br><br>
+            <button value="Submit">Insurance cost</button>
+        </form>
+        <p style="text-align: center;">{{ output }}</p>
+    </body>
+</html>
