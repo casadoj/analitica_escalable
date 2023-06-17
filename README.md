@@ -24,6 +24,8 @@ Las variables predictoras son preprocesadas en función de si son categóricas o
 
 He creado un `Pipeline` que incluye el propresado de los datos y el algoritmo de regresión. Este `Pipeline` se entrena en una [muestra de datos de entrenamiento](https://github.com/casadoj/analitica_escalable/blob/main/library/my_model/datasets/train.csv), y se evalúa en una [muestra de validación](https://github.com/casadoj/analitica_escalable/blob/main/library/my_model/datasets/test.csv). El [modelo entrenado](https://github.com/casadoj/analitica_escalable/tree/main/library/my_model/trained_models) se guarda en un archivo Pickle.
 
+El análisis exploratorio de los datos y el desarrollo del `Pipeline` lo he hecho en el _notebook_ [_train_pipeline.ipynb_](https://github.com/casadoj/analitica_escalable/blob/main/notebook/train_pipeline.ipynb). Para ello creé un entorno de Conda que se puede replicar con el archivo [environment.yml](https://github.com/casadoj/analitica_escalable/blob/main/env/environment.yml).
+
 ## Librería PyPI
 
 Todo el proceso antes explicado ha sido empaquetado en forma de librería Python llamada [insurance](https://pypi.org/project/insurance/0.0.5/) disponible en PyPI. El comando para instalar la librería con `pip` es el siguiente:
