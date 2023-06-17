@@ -7,7 +7,7 @@ test_data_file: test.csv
 
 # pipeline
 pipeline_name: pl_insurance
-pipeline_save_file: pl_insurance_m
+pipeline_save_file: pl_insurance_
 
 # variables
 target: charges

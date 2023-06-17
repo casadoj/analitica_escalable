@@ -1,0 +1,54 @@
+name: ae
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - blas=1.0=mkl
+  - bottleneck=1.3.5=py39h080aedc_0
+  - ca-certificates=2023.05.30=haa95532_0
+  - cachetools=5.3.0=pyhd8ed1ab_0
+  - chardet=5.1.0=py39hcbf5309_0
+  - colorama=0.4.6=pyhd8ed1ab_0
+  - distlib=0.3.6=pyhd8ed1ab_0
+  - fftw=3.3.9=h2bbff1b_1
+  - filelock=3.12.2=pyhd8ed1ab_0
+  - icc_rt=2022.1.0=h6049295_2
+  - importlib-metadata=6.6.0=pyha770c72_0
+  - intel-openmp=2021.4.0=haa95532_3556
+  - joblib=1.1.1=py39haa95532_0
+  - mkl=2021.4.0=haa95532_640
+  - mkl-service=2.4.0=py39h2bbff1b_0
+  - mkl_fft=1.3.1=py39h277e83a_0
+  - mkl_random=1.2.2=py39hf11a4ad_0
+  - numexpr=2.8.4=py39h5b0cc5e_0
+  - numpy=1.23.5=py39h3b20f71_0
+  - numpy-base=1.23.5=py39h4da318b_0
+  - openssl=3.0.8=h2bbff1b_0
+  - packaging=23.1=pyhd8ed1ab_0
+  - pandas=1.5.2=py39hf11a4ad_0
+  - pip=23.1.2=py39haa95532_0
+  - platformdirs=3.5.3=pyhd8ed1ab_0
+  - pluggy=1.0.0=pyhd8ed1ab_5
+  - pyproject-api=1.5.1=pyhd8ed1ab_0
+  - python=3.9.16=h1aa4202_3
+  - python-dateutil=2.8.2=pyhd3eb1b0_0
+  - python_abi=3.9=2_cp39
+  - pytz=2022.7=py39haa95532_0
+  - scikit-learn=1.2.0=py39hd77b12b_1
+  - scipy=1.9.3=py39he11b74f_0
+  - setuptools=67.8.0=py39haa95532_0
+  - six=1.16.0=pyhd3eb1b0_1
+  - sqlite=3.41.2=h2bbff1b_0
+  - threadpoolctl=2.2.0=pyh0d69192_0
+  - tomli=2.0.1=pyhd8ed1ab_0
+  - tox=4.3.5=pyhd8ed1ab_0
+  - typing-extensions=4.6.3=hd8ed1ab_0
+  - typing_extensions=4.6.3=pyha770c72_0
+  - tzdata=2023c=h04d1e81_0
+  - vc=14.2=h21ff451_1
+  - virtualenv=20.23.0=pyhd8ed1ab_0
+  - vs2015_runtime=14.27.29016=h5e58377_2
+  - wheel=0.38.4=py39haa95532_0
+  - zipp=3.15.0=pyhd8ed1ab_0
+prefix: C:\ProgramFiles\Anaconda3\envs\ae

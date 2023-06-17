@@ -19,4 +19,4 @@ preprocessor = ColumnTransformer(transformers=[('numeric', numeric_transformer, 
 
 # definir el pipeline del modelo: preproceso + regresor
 pl_insurance = Pipeline(steps=[('preprocessor', preprocessor),
-                               ('regressor', SGDRegressor(max_iter=1000, penalty='elasticnet', tol=1e-3, random_state=0))])
+                               ('regressor', SGDRegressor(max_iter=1000, penalty='elasticnet', tol=1e-3, random_state=config.model_config.random_state))])

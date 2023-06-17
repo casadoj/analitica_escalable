@@ -5,11 +5,9 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 # Package meta-data.
-NAME = 'ramonML'
-DESCRIPTION = "Example model package."
+NAME = 'insurance'
+DESCRIPTION = "A package that calculates insurance cost from a set of features: age, sex, body mass index, number of children, whether the person smokes or not, and the region in the US."
 REQUIRES_PYTHON = ">=3.6.0"
-
-
 
 long_description = DESCRIPTION
 
@@ -21,7 +19,6 @@ PACKAGE_DIR = ROOT_DIR / 'my_model'
 with open(PACKAGE_DIR / "VERSION") as f:
     _version = f.read().strip()
     about["__version__"] = _version
-
 
 # What packages are required for this module to be executed?
 def list_reqs(fname="requirements.txt"):

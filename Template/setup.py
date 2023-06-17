@@ -6,12 +6,9 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 # Package meta-data.
-NAME = 'analitica_test'
-DESCRIPTION = "Example model package."
+NAME = 'insurance'
+DESCRIPTION = "A package that calculates insurance cost from a set of features: age, sex, number of children, whether the person smokes or not, and the."
 REQUIRES_PYTHON = ">=3.6.0"
-
-
-
 long_description = DESCRIPTION
 
 # Load the package's VERSION file as a dictionary.
