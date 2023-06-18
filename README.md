@@ -47,3 +47,6 @@ El siguiente comando permite importar la imagen con la API web desde DockerHub:
 
 ```docker pull chuscas88/insurance:0.0.5```
 
+## Testeo del paquete con [`tox`](https://tox.wiki/en/latest/)
+
+No he podido hacer el testeo del paquete en `tox` porque hay algún problema de configuración en mi PC. Cuando ejecuto el comando `tox -r` obtengo el error del archivo [_error_tox.txt_](https://github.com/casadoj/analitica_escalable/blob/main/library/error_tox.txt). He intentado crear un entorno de Conda nuevo con una nueva instalación de `OpenSSL`, pero el error persiste, incluso en ejemplos tan sencillos como el de este [tutorial](https://christophergs.com/python/2020/04/12/python-tox-why-use-it-and-tutorial/).
